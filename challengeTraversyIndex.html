@@ -20,10 +20,64 @@
   .text-nowrap {
          text-align: nowrap;
                 }
-    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
   </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap Cheatsheet</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+   <!-- Jumbotron -->
+   <div class="jumbotron text-center">
+     <div class="container">
+      <h1> Welcome to my Website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+     </div>
+   </div>
+  
+   
+
+
   <div class="container">
     <!-- Typography -->
     <h1 class="page-header">Hello This is Bootstrap <small>Secondary text</small></h1>
@@ -209,6 +263,7 @@
      </table>
     </div>
     <hr>
+    <!-- List Group -->
     <div class="container">
 
       </ul>
@@ -228,6 +283,153 @@
 
       </div>
 
+    <hr>
+    <div class="container">
+      <!-- Panels -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+      
+      <!-- WELLS -->
+      <div class="well">Hello World</div>
+      <div class="well well-lg">Hello World</div>
+      <div class="well well-sm">Hello World</div>
+    
+
+    <hr>
+
+  <!-- Alerts -->
+
+    <div class="alert alert-success" role="alert">A success alert</div>
+    <div class="alert alert-info" role="alert">An info alert</div>
+    <div class="alert alert-warning" role="alert">Warning</div>
+    <div class="alert alert-danger" role="alert">Danger</div>
+
+    <div class="alert alert-warning alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+      You can close this alert
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">
+        50%
+      </div>
+    </div>
+    <hr>
+    <!-- Labels -->
+
+    <span class="label label-default">Default</span>
+    <h1>Hello<span class="label label-primary">Primary</span></h1>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+
+    <!-- Badges -->
+
+    <a href="#">Inbox<span class="badge">50</span></a>
+
+    <button class="btn btn-primary" type="button">
+      Messages <span class="badge">2</span>
+    </button>
+
+    <!-- Image -->
+
+  </div>
+  <div class="container">
+    <img class="thumbnail" src="http://via.placeholder.com/350x150">
+    <img class="img-rounded" src="http://via.placeholder.com/350x150">
+    <img class="img-circle" src="http://via.placeholder.com/100x50">
+  </div>
+  <hr>
+  <!-- Grids-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8 col-xs-8">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+       <div class="col-md-4 col-sm-4 col-xs-4">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-3">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+       <div class="col-md-3">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+          
+       <div class="col-md-3">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+       <div class="col-md-3">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+      <hr>
+       <div class="col-md-6">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+       <div class="col-md-6">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+           similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      </div>
+      <hr>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+      <div class="col-md-1">
+        <h3>Box</h3>
+      </div>
+    </div>
+
+
+  </div>
     <div style="height: 400px"></div>
 
     
