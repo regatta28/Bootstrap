@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap Examples</title>
   <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
   <style> 
    /*.navbar-toggle { float: left;}
    .navbar-brand { float: right;} */
+   @media (max-width 767px) {
+
+   }
   </style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">		
+	<nav class="navbar navbar-inverse">
+			
 		<div class='container'>
 		    <div class="nav navbar-header">
 		    	<a class="navbar-brand" href="#">CHOCOBLOCK</a>
@@ -22,7 +26,8 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			    </button>
-		    </div>	    
+			
+		</div>	    
 		    <ul id="myCollapsingList" class="nav navbar-nav 
 									         collapse navbar-collapse">
 				 <li><a href="#">Home</a></li>
@@ -33,6 +38,13 @@
 			</ul>
 		</div>
 	</nav>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>My Jumbotron</h1>
+			<p>A lightweight, flexible component that adds emphasize to certain content on your website</p>
+			<p><a class="btn btn-success btn-lg" href="#">Learn more</a></p>
+		</div>	
+	</div>
  
 <div class='container'>
 	
